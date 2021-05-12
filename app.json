@@ -1,0 +1,53 @@
+{
+  "name": "Torrent AIO Bot Duplicated",
+  "description": "All in one bot for torrenting",
+  "repository": "https://github.com/WhitePrime/primetorrdrive",
+  "keywords": [
+    "node",
+    "express",
+    "bot",
+    "torrent",
+    "automation"
+  ],
+  "website": "https://t.me/ITHard",
+    "repository": "https://github.com/WhitePrime/primetorrdrive",
+    "success_url": "https://t.me/ITHard",
+    "env": {
+        "TELEGRAM_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "required": true
+        },
+        "SEARCH_SITE": {
+            "description": "Your Heroku App Url",
+            "required": true
+        },
+        "CLIENT_ID": {
+            "description": "Your Google Drive Client Id. Read ReadMe for more info.",
+            "required": false
+        },
+        "CLIENT_SECRET": {
+            "description": "Your Google Drive Client Secret. Read ReadMe for more info.",
+            "required": false
+        },
+        "AUTH_CODE": {
+            "description": "Your Auth Code. You will get this after Login To Google Account.",
+            "required": false
+        },
+        "TOKEN": {
+            "description": "Your Token. Get it from https://<appname>.herokuapp.com/drivehelp",
+            "required": false
+        },
+        "GDRIVE_PARENT_FOLDER": {
+            "description": "Your Google Drive Folder Id. Team Drive Supported.",
+            "required": false
+        }
+    },
+  "builpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jontewks/puppeteer-heroku-buildpack.git"
+    }
+    ]
+}
